@@ -1,11 +1,12 @@
 <ion-header [translucent]="true">
+  <ion-toolbar>
     <ion-title>
-      <div style="display: flex; align-items: center;">
-        <div style="flex-grow: 1;">funcionarios</div>
-        <ion-button size="default">inserir</ion-button>
-      </div>
+      funcionarios
     </ion-title>
+    <ion-button size="default" slot="end">inserir</ion-button>
+  </ion-toolbar>
 </ion-header>
+
 <ion-content [fullscreen]="true">
 
   <ion-row class="ion-justify-content-center">
@@ -14,22 +15,21 @@
         <ion-label></ion-label>
         <ion-searchbar size="12" size-lg="6" search-icon="search-circle" placeholder="cargo"></ion-searchbar>
         <ion-col size="auto" class="ion-align-items-end">
-          <ion-checkbox slot="end"></ion-checkbox>
-          <ion-label>nome</ion-label>
+          <ion-checkbox>nome</ion-checkbox>
         </ion-col>
         <ion-col size="auto" class="ion-align-items-end">
-          <ion-checkbox slot="end"></ion-checkbox>
-          <ion-label>cargo</ion-label>
+          <ion-checkbox>cargo</ion-checkbox>
         </ion-col>
         <ion-col size="auto" class="ion-align-items-end">
-          <ion-checkbox slot="end"></ion-checkbox>
-          <ion-label>cidade</ion-label>
+          <ion-checkbox>cidade</ion-checkbox>
         </ion-col>
         <ion-col size="auto" class="ion-align-items-end">
-          <ion-checkbox slot="end"></ion-checkbox>
-          <ion-label>telefone</ion-label>
+          <ion-checkbox>telefone</ion-checkbox>
         </ion-col>
       </ion-item>
     </ion-col>
   </ion-row>
 </ion-content>
+
+    
+    
